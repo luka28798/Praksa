@@ -65,7 +65,7 @@ namespace TestProject.WebAPI.Controllers
         {
             SqlDataReader reader;
             SqlConnection myConnection = new SqlConnection();
-            myConnection.ConnectionString = @"Server=tcp:praksamono.database.windows.net,1433;Initial Catalog=Praksa;Persist Security Info=False;User ID=praksa;Password=stipelekic98*;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            myConnection.ConnectionString = @"Server=tcp:praksamono.database.windows.net,1433;Initial Catalog=Praksa;Persist Security Info=False;User ID=praksa;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             SqlCommand sqlCmd = new SqlCommand();
             sqlCmd.CommandType = CommandType.Text;
