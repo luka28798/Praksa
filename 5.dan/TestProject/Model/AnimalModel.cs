@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Animal.Model
+﻿namespace Animal.Model
 {
     public class Animals
     {
-        public int AnimalID;
-        public string AnimalType;
-        public string AnimalName;
-        public int HumanID;
+        public int AnimalID { get; set; }
+        public string AnimalType { get; set; }
+        public string AnimalName { get; set; }
+        public int HumanID { get; set; }
         public Animals(int AnimalID, string AnimalType, string AnimalName, int HumanID)
         {
             this.AnimalID = AnimalID;
@@ -20,6 +14,6 @@ namespace Animal.Model
             this.HumanID = HumanID;
         }
 
-        public Animals() { }
+        public Animals() {  }
     }
 }

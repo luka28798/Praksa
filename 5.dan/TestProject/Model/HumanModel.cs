@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Human.Model
+﻿namespace Human.Model
 {
     public class People
     {
-        public int HumanID;
-        public string FirstName;
-        public string LastName;
-        
+        public int HumanID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
         public People(int HumanID, string FirstName, string LastName)
         {
             this.HumanID = HumanID;

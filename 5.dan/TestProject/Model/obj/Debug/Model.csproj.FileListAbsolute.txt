@@ -4,3 +4,9 @@ C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Model\ob
 C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Model\obj\Debug\Model.dll
 C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Model\obj\Debug\Model.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\5.dan\TestProject\Model\bin\Debug\Model.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\5.dan\TestProject\Model\bin\Debug\Model.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\5.dan\TestProject\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\5.dan\TestProject\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\5.dan\TestProject\Model\obj\Debug\Model.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\5.dan\TestProject\Model\obj\Debug\Model.pdb

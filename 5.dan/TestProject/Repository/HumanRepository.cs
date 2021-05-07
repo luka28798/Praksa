@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Human.Model;
 using System.Data.SqlClient;
-using System.Web;
 using System.Web.Http;
 using System.Data;
 using System.Configuration;
