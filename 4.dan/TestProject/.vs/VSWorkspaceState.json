@@ -2,10 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\TestProject.WebAPI",
-    "\\TestProject.WebAPI\\Controllers",
-    "\\TestProject.WebAPI\\Models",
-    "\\TestProject.WebAPI\\Repository",
-    "\\TestProject.WebAPI\\Services"
+    "\\TestProject.WebAPI\\Controllers"
   ],
   "SelectedNode": "\\TestProject.sln",
   "PreviewInSolutionExplorer": false

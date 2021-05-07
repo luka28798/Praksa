@@ -253,3 +253,9 @@ C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\TestProj
 C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\TestProject.WebAPI\bin\Antlr3.Runtime.pdb
 C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\TestProject.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\TestProject.WebAPI\obj\Debug\TestProject.WebAPI.csproj.CopyComplete
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\TestProject.WebAPI\bin\Model.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\TestProject.WebAPI\bin\Service.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\TestProject.WebAPI\bin\Repository.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\TestProject.WebAPI\bin\Model.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\TestProject.WebAPI\bin\Service.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\TestProject.WebAPI\bin\Repository.pdb

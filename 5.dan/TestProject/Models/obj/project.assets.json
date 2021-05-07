@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "TestProject.WebAPI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
+      },
+      "TestProject.WebAPI/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/TestProject.WebAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestProject.WebAPI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
+    },
+    "TestProject.WebAPI/1.0.0": {
+      "type": "project",
+      "path": "../TestProject.WebAPI/TestProject.WebAPI.csproj",
+      "msbuildProject": "../TestProject.WebAPI/TestProject.WebAPI.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Services >= 1.0.0",
+      "TestProject.WebAPI >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\luka2\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\luka2\\OneDrive\\Radna površina\\Praksa\\Praksa\\4.dan\\TestProject\\Models\\Models.csproj",
+      "projectName": "Models",
+      "projectPath": "C:\\Users\\luka2\\OneDrive\\Radna površina\\Praksa\\Praksa\\4.dan\\TestProject\\Models\\Models.csproj",
+      "packagesPath": "C:\\Users\\luka2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luka2\\OneDrive\\Radna površina\\Praksa\\Praksa\\4.dan\\TestProject\\Models\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\luka2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\luka2\\OneDrive\\Radna površina\\Praksa\\Praksa\\4.dan\\TestProject\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\luka2\\OneDrive\\Radna površina\\Praksa\\Praksa\\4.dan\\TestProject\\Services\\Services.csproj"
+            },
+            "C:\\Users\\luka2\\OneDrive\\Radna površina\\Praksa\\Praksa\\4.dan\\TestProject\\TestProject.WebAPI\\TestProject.WebAPI.csproj": {
+              "projectPath": "C:\\Users\\luka2\\OneDrive\\Radna površina\\Praksa\\Praksa\\4.dan\\TestProject\\TestProject.WebAPI\\TestProject.WebAPI.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\Service.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\Service.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\Model.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\Repository.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\System.Web.Http.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\Newtonsoft.Json.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\Model.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\Repository.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\System.Web.Http.xml
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\bin\Debug\Newtonsoft.Json.xml
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\obj\Debug\Service.csprojAssemblyReference.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\obj\Debug\Service.csproj.CopyComplete
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\obj\Debug\Service.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\4.dan\TestProject\Service\obj\Debug\Service.pdb
