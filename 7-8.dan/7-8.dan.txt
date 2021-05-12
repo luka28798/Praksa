@@ -1,0 +1,9 @@
+7. dan
+
+Napravljeno za tablicu Animal (post i put ne rade kad im se prosljeduje objekt iz interface klase, nego baš 
+originalni objekt klase - popraviti), treba dodati isto za Human
+
+UPDATE: Riješeno!
+
+8. dan
+Automapper - Napravljeno za tablicu Animal, treba još za Human, te napraviti filter, sort i paging
