@@ -14,32 +14,31 @@ namespace Project.Common
 
         public bool ValidInput()
         {
-            if (SortParameter == null & SortOrder == null)
+            if (SortParameter == null && SortOrder == null)
             {
                 return true;
             }
-            else
+            
+            switch (SortParameter)
             {
-                switch (SortParameter)
-                {
-                    case "AnimalID":
-                        break;
-                    case "AnimalType":
-                        break;
-                    default:
-                        return false;
-                }
-                switch (SortOrder)
-                {
-                    case "asc":
-                        break;
-                    case "desc":
-                        break;
-                    default:
-                        return false;
-                }
-                return true;
+                case "AnimalID":
+                    break;
+                case "AnimalType":
+                    break;
+                default:
+                    return false;
             }
+            switch (SortOrder)
+            {
+                case "asc":
+                    break;
+                case "desc":
+                    break;
+                default:
+                    return false;
+            }
+            return true;
+        
         }
         
     }

@@ -54,13 +54,17 @@ namespace Animal.Repository
         
         public async Task<List<IAnimalModel>> GetAllAnimals(AnimalFilterModel animalFilter, AnimalSortModel animalSort)
         {
+            List<AnimalEntity> animals = new List<AnimalEntity>();
             SqlCommand sqlCmd = new SqlCommand();
             sqlCmd.CommandType = CommandType.Text;
-            sqlCmd.CommandText = "Select * FROM Animals";
+            sqlCmd.CommandText = "Select * FROM Animals ";
             bool filterDone = false;
-            if (animalFilter != null)
+            if (animalFilter == null)
             {
-                if (animalFilter.idBegin != 0 & animalFilter.idEnd != 0)
+                sqlCmd.CommandText += "";
+            }else
+            {
+                if (animalFilter.idBegin != 0 && animalFilter.idEnd != 0)
                 {
                     sqlCmd.CommandText += " WHERE AnimalID BETWEEN " + animalFilter.idBegin + " AND " + animalFilter.idEnd;
                     filterDone = true;
@@ -82,27 +86,39 @@ namespace Animal.Repository
                 }
             }
 
-            if (animalSort.ValidInput())
+            
+            if (animalSort == null)
             {
-                if (animalSort.SortParameter != "" & animalSort.SortOrder != "")
+                sqlCmd.CommandText += "";
+
+            }
+            else 
+            {
+                if (!animalSort.ValidInput())
                 {
                     sqlCmd.CommandText += " ORDER BY " + animalSort.SortParameter + " " + animalSort.SortOrder;
                 }
             }
-            sqlCmd.Connection = myConnection;          
+            
+
+            
+            sqlCmd.Connection = myConnection;
             await myConnection.OpenAsync();
             reader = sqlCmd.ExecuteReader();
-            List<AnimalEntity> animals = new List<AnimalEntity>();
+            AnimalEntity animal = null;
             while (reader.Read())
             {
-                AnimalEntity animal = new AnimalEntity();
+                animal = new AnimalEntity();
                 animal.AnimalID = Convert.ToInt32(reader.GetValue(0));
                 animal.AnimalType = reader.GetValue(1).ToString();
                 animal.AnimalName = reader.GetValue(2).ToString();
                 animal.HumanID = Convert.ToInt32(reader.GetValue(3));
                 animals.Add(animal);
             }
+            
             myConnection.Close();
+            
+            
             return mapper.Map<List<IAnimalModel>>(animals);
             
 
