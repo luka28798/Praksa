@@ -1,6 +1,0 @@
-C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Model.Common\bin\Debug\Model.Common.dll
-C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Model.Common\bin\Debug\Model.Common.pdb
-C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Model.Common\obj\Debug\Model.Common.csprojAssemblyReference.cache
-C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Model.Common\obj\Debug\Model.Common.csproj.CoreCompileInputs.cache
-C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Model.Common\obj\Debug\Model.Common.dll
-C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Model.Common\obj\Debug\Model.Common.pdb
