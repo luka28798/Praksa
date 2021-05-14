@@ -20,9 +20,9 @@ namespace Animal.Service
             this.Repository = repository;
         }
 
-        public async Task<List<IAnimalModel>> GetAnimals(AnimalFilterModel animalFilter, AnimalSortModel animalSort)
+        public async Task<List<IAnimalModel>> FindAnimals(IAnimalFilterModel animalFilter, IAnimalSortModel animalSort)
         {
-            return await Repository.GetAllAnimals(animalFilter,animalSort);
+            return await Repository.FindAnimals(animalFilter,animalSort);
         }
 
         public async Task AddAnimal(IAnimalModel value)

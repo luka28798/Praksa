@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="AnimalFilterModel.cs" />
     <Compile Include="AnimalSortModel.cs" />
+    <Compile Include="IAnimalFilterModel.cs" />
+    <Compile Include="IAnimalSortModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

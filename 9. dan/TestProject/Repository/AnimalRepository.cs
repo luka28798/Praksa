@@ -52,37 +52,22 @@ namespace Animal.Repository
         }
 
         
-        public async Task<List<IAnimalModel>> GetAllAnimals(AnimalFilterModel animalFilter, AnimalSortModel animalSort)
+        public async Task<List<IAnimalModel>> FindAnimals(IAnimalFilterModel animalFilter, IAnimalSortModel animalSort)
         {
             List<AnimalEntity> animals = new List<AnimalEntity>();
             SqlCommand sqlCmd = new SqlCommand();
             sqlCmd.CommandType = CommandType.Text;
             sqlCmd.CommandText = "Select * FROM Animals ";
-            bool filterDone = false;
+            
             if (animalFilter == null)
             {
                 sqlCmd.CommandText += "";
             }else
             {
-                if (animalFilter.idBegin != 0 && animalFilter.idEnd != 0)
-                {
-                    sqlCmd.CommandText += " WHERE AnimalID BETWEEN " + animalFilter.idBegin + " AND " + animalFilter.idEnd;
-                    filterDone = true;
-
-                }
-
                 if (animalFilter.AnimalType != "")
 
-                {
-                    if (filterDone)
-                    {
-                        sqlCmd.CommandText += " AND AnimalType Like '" + animalFilter.AnimalType + "%'";
-                    }
-                    else
-                    {
+                {      
                         sqlCmd.CommandText += " WHERE AnimalType Like '" + animalFilter.AnimalType + "%'";
-                    }
-                    filterDone = false;
                 }
             }
 

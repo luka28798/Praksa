@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Project.Common
 {
-    public class AnimalFilterModel
-    {
-        public int idBegin { get; set; }
-        public int idEnd { get; set; }
+    public class AnimalFilterModel : IAnimalFilterModel
+    { 
         public string AnimalType { get; set; }
     }
 }

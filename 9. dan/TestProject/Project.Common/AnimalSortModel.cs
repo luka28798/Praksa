@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.Common
 {
-    public class AnimalSortModel
+    public class AnimalSortModel : IAnimalSortModel
     {
         public string SortParameter { get; set; }
         public string SortOrder { get; set; }
@@ -18,7 +18,7 @@ namespace Project.Common
             {
                 return true;
             }
-            
+
             switch (SortParameter)
             {
                 case "AnimalID":
@@ -38,8 +38,8 @@ namespace Project.Common
                     return false;
             }
             return true;
-        
+
         }
-        
+
     }
 }

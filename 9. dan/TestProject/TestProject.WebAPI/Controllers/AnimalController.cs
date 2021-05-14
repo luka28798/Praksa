@@ -33,7 +33,7 @@ namespace TestProject.WebAPI.Controllers
             IAnimalModel animal = await Service.GetAnimalByID(id);
             if (animal == null)
             {
-                return Request.CreateResponse(HttpStatusCode.NotFound, "Ne postoji životinja s tim ID");
+                return Request.CreateResponse(HttpStatusCode.NotFound, "Animal with that ID already exists");
                 
             }
 
@@ -46,14 +46,14 @@ namespace TestProject.WebAPI.Controllers
         [Route("api/Animal/")]
         public async Task<HttpResponseMessage> Get([FromUri] AnimalFilterModel animalFilter, [FromUri] AnimalSortModel animalSort)
         {
-            List<IAnimalModel> listAnimal = await Service.GetAnimals(animalFilter, animalSort);
+            List<IAnimalModel> listAnimal = await Service.FindAnimals(animalFilter, animalSort);
             if (listAnimal[0] != null)
             {
                 HttpResponseMessage response = Request.CreateResponse(_mapper.Map<List<AnimalsRest>>(listAnimal));
                 return response;
             }
 
-            return Request.CreateResponse(HttpStatusCode.NotFound, "Lista je prazna");
+            return Request.CreateResponse(HttpStatusCode.NotFound, "List is empty");
         }
         [HttpPost]
         [Route("api/Animal/")]
@@ -62,11 +62,11 @@ namespace TestProject.WebAPI.Controllers
             IAnimalModel animal = await Service.GetAnimalByID(value.AnimalID);
             if (animal != null)
             {
-                return Request.CreateResponse(HttpStatusCode.BadRequest, "Životinja s tim ID već postoji");
+                return Request.CreateResponse(HttpStatusCode.BadRequest, "Animal with that ID already exists");
 
             }
             await Service.AddAnimal(_mapper.Map<IAnimalModel>(value));
-            return Request.CreateResponse(HttpStatusCode.OK, "Unesena nova životinja.");
+            return Request.CreateResponse(HttpStatusCode.OK, "New animal inserted.");
         }
 
         // DELETE api/values/5
@@ -75,7 +75,7 @@ namespace TestProject.WebAPI.Controllers
             IAnimalModel animal = await Service.GetAnimalByID(id);
             if (animal == null)
             {
-                return Request.CreateResponse(HttpStatusCode.NotFound, "Ne postoji životinja s tim ID");
+                return Request.CreateResponse(HttpStatusCode.NotFound, "Animal with that ID doesn't exist");
 
             }
             await Service.DeleteAnimalByID(id);
@@ -87,18 +87,18 @@ namespace TestProject.WebAPI.Controllers
             IAnimalModel animal = await Service.GetAnimalByID(id);
             if (animal == null)
             {
-                return Request.CreateResponse(HttpStatusCode.NotFound, "Ne postoji životinja s tim ID");
+                return Request.CreateResponse(HttpStatusCode.NotFound, "Animal with that ID doesn't exist");
 
             }
             else if (animal != null & id != value.AnimalID)
             {
-                HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.BadRequest, "ID se ne smije mijenjati");
+                HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.BadRequest, "ID can't be changed");
                 return response;
             }
             else
             {
                 await Service.UpdateAnimal(id, _mapper.Map<IAnimalModel>(value));
-                HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, "Životinji s ID=" + value.AnimalID + " su promijenjeni podaci.");
+                HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, "Animal with ID=" + value.AnimalID + " got changed data.");
                 return response;
 
 
