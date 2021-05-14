@@ -34,19 +34,19 @@ namespace TestProject.WebAPI.Controllers
             if (animal == null)
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound, "Animal with that ID already exists");
-                
+
             }
 
             HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, _mapper.Map<AnimalsRest>(animal));
             return response;
-            
+
         }
 
         [HttpGet]
         [Route("api/Animal/")]
-        public async Task<HttpResponseMessage> Get([FromUri] AnimalFilterModel animalFilter, [FromUri] AnimalSortModel animalSort)
+        public async Task<HttpResponseMessage> Get([FromUri] AnimalFilterModelRest animalFilter, [FromUri] AnimalSortModelRest animalSort, [FromUri] AnimalPagingModelRest animalPaging)
         {
-            List<IAnimalModel> listAnimal = await Service.FindAnimals(animalFilter, animalSort);
+            List<IAnimalModel> listAnimal = await Service.FindAnimals(_mapper.Map<IAnimalFilterModel>(animalFilter), _mapper.Map<IAnimalSortModel>(animalSort), _mapper.Map<IAnimalPagingModel>(animalPaging));
             if (listAnimal[0] != null)
             {
                 HttpResponseMessage response = Request.CreateResponse(_mapper.Map<List<AnimalsRest>>(listAnimal));
@@ -79,7 +79,7 @@ namespace TestProject.WebAPI.Controllers
 
             }
             await Service.DeleteAnimalByID(id);
-            return Request.CreateResponse(HttpStatusCode.OK, "Delete Successful");        
+            return Request.CreateResponse(HttpStatusCode.OK, "Delete Successful");
         }
 
         public async Task<HttpResponseMessage> Put(int id, [FromBody] AnimalsRest value)
@@ -105,7 +105,7 @@ namespace TestProject.WebAPI.Controllers
             }
         }
 
-        
+
 
     }
     public class AnimalsRest
@@ -116,4 +116,22 @@ namespace TestProject.WebAPI.Controllers
         public int HumanID { get; set; }
     }
 
+    public class AnimalFilterModelRest
+    {
+        public string AnimalType { get; set; }
+    }
+
+    public class AnimalSortModelRest
+    {
+        public string SortParameter { get; set; }
+        public string SortOrder { get; set; }
+    }
+
+    public class AnimalPagingModelRest
+    {
+        public int Page { get; set; }
+        public int DataPerPage { get; set; }
+
+
+    }
 }

@@ -29,6 +29,7 @@ using Animal.Service.Common;
 using TestProject.WebAPI.Controllers;
 using AutoMapper;
 using Automapper.Model;
+using Project.Common;
 
 namespace TestProject.WebAPI
 {
@@ -45,9 +46,11 @@ namespace TestProject.WebAPI
             builder.RegisterType<People>().As<IHumanModel>();
             builder.RegisterType<HumanRepository>().As<IHumanRepository>();
             builder.RegisterType<HumanService>().As<IHumanService>();
+            builder.RegisterType<AnimalFilterModel>().As<IAnimalFilterModel>();
+            builder.RegisterType<AnimalSortModel>().As<IAnimalSortModel>();
+            builder.RegisterType<AnimalSortRepository>().As<IAnimalSortRepository>();
+            builder.RegisterType<AnimalPagingModel>().As<IAnimalPagingModel>();
 
-            
-            
             builder.Register(context => new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile<OrganizationProfile>();

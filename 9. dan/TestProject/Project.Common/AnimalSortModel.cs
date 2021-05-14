@@ -10,36 +10,5 @@ namespace Project.Common
     {
         public string SortParameter { get; set; }
         public string SortOrder { get; set; }
-
-
-        public bool ValidInput()
-        {
-            if (SortParameter == null && SortOrder == null)
-            {
-                return true;
-            }
-
-            switch (SortParameter)
-            {
-                case "AnimalID":
-                    break;
-                case "AnimalType":
-                    break;
-                default:
-                    return false;
-            }
-            switch (SortOrder)
-            {
-                case "asc":
-                    break;
-                case "desc":
-                    break;
-                default:
-                    return false;
-            }
-            return true;
-
-        }
-
     }
 }

@@ -22,10 +22,11 @@ namespace Animal.Repository
         private static SqlDataReader reader;
 
         private readonly IMapper mapper;
-
-        public AnimalRepository(IMapper mapper)
+        protected IAnimalSortRepository SortRepository { get; set; }
+        public AnimalRepository(IMapper mapper, IAnimalSortRepository sortRepository)
         {
             this.mapper = mapper;
+            this.SortRepository = sortRepository;
         }
         public async Task<IAnimalModel> GetAnimalByID(int id)
         {
@@ -52,7 +53,7 @@ namespace Animal.Repository
         }
 
         
-        public async Task<List<IAnimalModel>> FindAnimals(IAnimalFilterModel animalFilter, IAnimalSortModel animalSort)
+        public async Task<List<IAnimalModel>> FindAnimals(IAnimalFilterModel animalFilter, IAnimalSortModel animalSort, IAnimalPagingModel animalPaging)
         {
             List<AnimalEntity> animals = new List<AnimalEntity>();
             SqlCommand sqlCmd = new SqlCommand();
@@ -79,13 +80,25 @@ namespace Animal.Repository
             }
             else 
             {
-                if (!animalSort.ValidInput())
+                if (!(SortRepository.ValidInput(animalSort)))
                 {
                     sqlCmd.CommandText += " ORDER BY " + animalSort.SortParameter + " " + animalSort.SortOrder;
                 }
             }
             
-
+            if (animalPaging == null)
+            {
+                sqlCmd.CommandText += "";
+            }
+            else
+            {
+                if (animalSort.SortParameter != "")
+                    if (animalPaging.DataPerPage != 0 && animalPaging.Page != 0)
+                    {
+                        sqlCmd.CommandText += " OFFSET " + animalPaging.DataPerPage * (animalPaging.Page - 1) + " ROWS FETCH NEXT " + animalPaging.DataPerPage + " ROWS ONLY ";
+                    }
+            }
+            
             
             sqlCmd.Connection = myConnection;
             await myConnection.OpenAsync();

@@ -6,6 +6,7 @@ using AutoMapper;
 using Animal.Model.Common;
 using TestProject.WebAPI.Controllers;
 using AnimalsEntity;
+using Project.Common;
 
 namespace Automapper.Model
 {
@@ -15,6 +16,9 @@ namespace Automapper.Model
         {
             CreateMap<AnimalsRest, IAnimalModel>().ReverseMap();
             CreateMap<IAnimalModel, AnimalEntity>().ReverseMap();
+            CreateMap<AnimalFilterModelRest, IAnimalFilterModel>().ReverseMap();
+            CreateMap<AnimalSortModelRest, IAnimalSortModel>().ReverseMap();
+            CreateMap<AnimalPagingModelRest, IAnimalPagingModel>().ReverseMap();
         }
     }
 }

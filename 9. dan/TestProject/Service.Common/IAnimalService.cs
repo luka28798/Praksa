@@ -13,7 +13,7 @@ namespace Animal.Service.Common
         Task AddAnimal(IAnimalModel value);
         Task DeleteAnimalByID(int id);
         Task<IAnimalModel> GetAnimalByID(int id);
-        Task<List<IAnimalModel>> FindAnimals(IAnimalFilterModel animalFilter, IAnimalSortModel animalSort);
+        Task<List<IAnimalModel>> FindAnimals(IAnimalFilterModel animalFilter, IAnimalSortModel animalSort, IAnimalPagingModel animalPaging);
         Task UpdateAnimal(int id, IAnimalModel value);
     }
 }

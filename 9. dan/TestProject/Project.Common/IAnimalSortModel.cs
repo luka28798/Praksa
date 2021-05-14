@@ -5,6 +5,6 @@
         string SortOrder { get; set; }
         string SortParameter { get; set; }
 
-        bool ValidInput();
+        //bool ValidInput(); 
     }
 }
