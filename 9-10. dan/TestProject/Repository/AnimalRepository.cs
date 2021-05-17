@@ -53,7 +53,7 @@ namespace Animal.Repository
         }
 
         
-        public async Task<List<IAnimalModel>> FindAnimals(IAnimalFilterModel animalFilter, IAnimalSortModel animalSort, IAnimalPagingModel animalPaging)
+        public async Task<List<IAnimalModel>> FindAnimals(IAnimalFilterModel animalFilter, IAnimalSortModel animalSort, IPagingModel animalPaging)
         {
             List<AnimalEntity> animals = new List<AnimalEntity>();
             SqlCommand sqlCmd = new SqlCommand();

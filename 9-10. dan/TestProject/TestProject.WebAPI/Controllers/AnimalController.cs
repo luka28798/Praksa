@@ -33,7 +33,7 @@ namespace TestProject.WebAPI.Controllers
             IAnimalModel animal = await Service.GetAnimalByID(id);
             if (animal == null)
             {
-                return Request.CreateResponse(HttpStatusCode.NotFound, "Animal with that ID already exists");
+                return Request.CreateResponse(HttpStatusCode.NotFound, "Animal with that ID doesn't exists");
 
             }
 
@@ -44,9 +44,9 @@ namespace TestProject.WebAPI.Controllers
 
         [HttpGet]
         [Route("api/Animal/")]
-        public async Task<HttpResponseMessage> Get([FromUri] AnimalFilterModelRest animalFilter, [FromUri] AnimalSortModelRest animalSort, [FromUri] AnimalPagingModelRest animalPaging)
+        public async Task<HttpResponseMessage> Get([FromUri] AnimalFilterModelRest animalFilter, [FromUri] AnimalSortModelRest animalSort, [FromUri] PagingModelRest animalPaging)
         {
-            List<IAnimalModel> listAnimal = await Service.FindAnimals(_mapper.Map<IAnimalFilterModel>(animalFilter), _mapper.Map<IAnimalSortModel>(animalSort), _mapper.Map<IAnimalPagingModel>(animalPaging));
+            List<IAnimalModel> listAnimal = await Service.FindAnimals(_mapper.Map<IAnimalFilterModel>(animalFilter), _mapper.Map<IAnimalSortModel>(animalSort), _mapper.Map<IPagingModel>(animalPaging));
             if (listAnimal[0] != null)
             {
                 HttpResponseMessage response = Request.CreateResponse(_mapper.Map<List<AnimalsRest>>(listAnimal));
@@ -127,7 +127,7 @@ namespace TestProject.WebAPI.Controllers
         public string SortOrder { get; set; }
     }
 
-    public class AnimalPagingModelRest
+    public class PagingModelRest
     {
         public int Page { get; set; }
         public int DataPerPage { get; set; }

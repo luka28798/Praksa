@@ -30,7 +30,7 @@ using TestProject.WebAPI.Controllers;
 using AutoMapper;
 using Automapper.Model;
 using Project.Common;
-
+using Humans.Entity;
 namespace TestProject.WebAPI
 {
     public class WebApiApplication : System.Web.HttpApplication
@@ -49,7 +49,7 @@ namespace TestProject.WebAPI
             builder.RegisterType<AnimalFilterModel>().As<IAnimalFilterModel>();
             builder.RegisterType<AnimalSortModel>().As<IAnimalSortModel>();
             builder.RegisterType<AnimalSortRepository>().As<IAnimalSortRepository>();
-            builder.RegisterType<AnimalPagingModel>().As<IAnimalPagingModel>();
+            builder.RegisterType<PagingModel>().As<IPagingModel>();
 
             builder.Register(context => new MapperConfiguration(cfg =>
             {

@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Project.Common
 {
-    public class AnimalPagingModel : IAnimalPagingModel
+    public class HumanFilterModel : IHumanFilterModel
     {
-        public int Page { get; set; }
-        public int DataPerPage { get; set; }
-
-
+        public string LastName { get; set; }
     }
 }

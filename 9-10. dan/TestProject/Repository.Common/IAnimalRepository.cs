@@ -14,7 +14,7 @@ namespace Animal.Repository.Common
     {
         Task AddAnimal([FromBody] IAnimalModel value);
         Task DeleteAnimalByID(int id);
-        Task<List<IAnimalModel>> FindAnimals(IAnimalFilterModel animalFilter, IAnimalSortModel animalSort, IAnimalPagingModel animalPaging);
+        Task<List<IAnimalModel>> FindAnimals(IAnimalFilterModel animalFilter, IAnimalSortModel animalSort, IPagingModel animalPaging);
         Task<IAnimalModel> GetAnimalByID(int id);
         Task UpdateAnimal(int id, [FromBody] IAnimalModel value);
     }

@@ -44,9 +44,15 @@
     <Compile Include="AnimalFilterModel.cs" />
     <Compile Include="AnimalSortModel.cs" />
     <Compile Include="AnimalSortRepository.cs" />
-    <Compile Include="AnimalPagingModel.cs" />
+    <Compile Include="HumanSortRepository.cs" />
+    <Compile Include="IHumanFilterModel.cs" />
+    <Compile Include="IHumanSortModel.cs" />
+    <Compile Include="IHumanSortRepository.cs" />
+    <Compile Include="PagingModel.cs" />
+    <Compile Include="HumanSortModel.cs" />
+    <Compile Include="HumanFilterModel.cs" />
     <Compile Include="IAnimalFilterModel.cs" />
-    <Compile Include="IAnimalPagingModel.cs" />
+    <Compile Include="IPagingModel.cs" />
     <Compile Include="IAnimalSortModel.cs" />
     <Compile Include="IAnimalSortRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

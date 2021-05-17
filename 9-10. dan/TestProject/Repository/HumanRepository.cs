@@ -8,6 +8,9 @@ using System.Configuration;
 using System.Threading.Tasks;
 using Human.Model.Common;
 using Human.Repository.Common;
+using Humans.Entity;
+using AutoMapper;
+using Project.Common;
 
 namespace Human.Repository
 {
@@ -17,6 +20,14 @@ namespace Human.Repository
         private static readonly SqlConnection myConnection = new SqlConnection(ConnString);
 
         private static SqlDataReader reader;
+
+        private readonly IMapper mapper;
+        protected IHumanSortRepository SortRepository { get; set; }
+        public HumanRepository(IMapper mapper, IHumanSortRepository sortRepository)
+        {
+            this.mapper = mapper;
+            this.SortRepository = sortRepository;
+        }
         public async Task<IHumanModel> GetPeopleByID(int id)
         {
             SqlCommand sqlCmd = new SqlCommand();
@@ -25,39 +36,79 @@ namespace Human.Repository
             sqlCmd.Connection = myConnection;
             await myConnection.OpenAsync();
             reader = sqlCmd.ExecuteReader();
-            IHumanModel people = null;
+            HumanEntity people = null;
             while (reader.Read())
             {
-                people = new People();
+                people = new HumanEntity();
                 people.HumanID = Convert.ToInt32(reader.GetValue(0));
                 people.FirstName = reader.GetValue(1).ToString();
                 people.LastName = reader.GetValue(2).ToString();
 
             }
             myConnection.Close();
-            return people;
+            return mapper.Map<IHumanModel>(people);
         }
 
-        public async Task<List<IHumanModel>> getAllPeople()
+        public async Task<List<IHumanModel>> FindPeople(IHumanFilterModel humanFilter, IHumanSortModel humanSort, IPagingModel humanPaging)
         {
             SqlCommand sqlCmd = new SqlCommand();
             sqlCmd.CommandType = CommandType.Text;
             sqlCmd.CommandText = "Select * FROM People";
+
+            if (humanFilter == null)
+            {
+                sqlCmd.CommandText += "";
+            }
+            else
+            {
+                if (humanFilter.LastName != "")
+
+                {
+                    sqlCmd.CommandText += " WHERE LastName Like '" + humanFilter.LastName + "%'";
+                }
+            }
+
+
+            if (humanSort == null)
+            {
+                sqlCmd.CommandText += "";
+
+            }
+            else
+            {
+                if (!(SortRepository.ValidInput(humanSort)))
+                {
+                    sqlCmd.CommandText += " ORDER BY " + humanSort.SortParameter + " " + humanSort.SortOrder;
+                }
+            }
+
+            if (humanPaging == null)
+            {
+                sqlCmd.CommandText += "";
+            }
+            else
+            {
+                if (humanSort.SortParameter != "")
+                    if (humanPaging.DataPerPage != 0 && humanPaging.Page != 0)
+                    {
+                        sqlCmd.CommandText += " OFFSET " + humanPaging.DataPerPage * (humanPaging.Page - 1) + " ROWS FETCH NEXT " + humanPaging.DataPerPage + " ROWS ONLY ";
+                    }
+            }
             sqlCmd.Connection = myConnection;
             await myConnection.OpenAsync();
             reader = sqlCmd.ExecuteReader();
-            //IHumanModel human = null;
-            List<IHumanModel> people = new List<IHumanModel>();
+            HumanEntity human = null;
+            List<HumanEntity> peopleList = new List<HumanEntity>();
             while (reader.Read())
             {
-                IHumanModel human = new People();
+                human = new HumanEntity();
                 human.HumanID = Convert.ToInt32(reader.GetValue(0));
                 human.FirstName = reader.GetValue(1).ToString();
                 human.LastName = reader.GetValue(2).ToString();
-                people.Add(human);
+                peopleList.Add(human);
             }
             myConnection.Close();
-            return people;
+            return mapper.Map<List<IHumanModel>>(peopleList);
         }
 
         public async Task AddPeople([FromBody] IHumanModel value)

@@ -1,6 +1,6 @@
 ﻿namespace Project.Common
 {
-    public interface IAnimalPagingModel
+    public interface IPagingModel
     {
         int DataPerPage { get; set; }
         int Page { get; set; }

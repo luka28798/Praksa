@@ -3,7 +3,7 @@ using Human.Repository.Common;
 using Human.Model.Common;
 using Human.Service.Common;
 using System.Threading.Tasks;
-
+using Project.Common;
 
 namespace Human.Service
 {
@@ -22,9 +22,9 @@ namespace Human.Service
         {
             return await Repository.GetPeopleByID(id);
         }
-        public async Task<List<IHumanModel>> GetAllPeople()
+        public async Task<List<IHumanModel>> FindPeople(IHumanFilterModel humanFilter, IHumanSortModel humanSort, IPagingModel humanPaging)
         {
-            return await Repository.getAllPeople();
+            return await Repository.FindPeople(humanFilter, humanSort, humanPaging);
         }
 
         public async Task AddPeople(IHumanModel people)

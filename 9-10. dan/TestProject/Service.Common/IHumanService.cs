@@ -2,6 +2,7 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Project.Common;
 
 namespace Human.Service.Common
 {
@@ -11,7 +12,7 @@ namespace Human.Service.Common
 
         Task AddPeople(IHumanModel people);
         Task DeleteHumanByID(int id);
-        Task<List<IHumanModel>> GetAllPeople();
+        Task<List<IHumanModel>> FindPeople(IHumanFilterModel humanFilter, IHumanSortModel humanSort, IPagingModel humanPaging);
         Task<IHumanModel> GetPeopleByID(int id);
         Task UpdatePeople(int id, IHumanModel value);
     }
