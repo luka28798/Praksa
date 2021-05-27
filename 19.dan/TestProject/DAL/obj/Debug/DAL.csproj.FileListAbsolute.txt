@@ -1,0 +1,18 @@
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\DAL\bin\Debug\DAL.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\DAL\bin\Debug\DAL.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\DAL\obj\Debug\DAL.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\DAL\obj\Debug\DAL.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\DAL\bin\Debug\DAL.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\DAL\bin\Debug\DAL.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\DAL\obj\Debug\DAL.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\DAL\obj\Debug\DAL.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\DAL\bin\Debug\DAL.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\DAL\bin\Debug\DAL.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\DAL\obj\Debug\DAL.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\DAL\obj\Debug\DAL.pdb
