@@ -1,0 +1,42 @@
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Service.Common\bin\Debug\Service.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Service.Common\bin\Debug\Service.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Service.Common\bin\Debug\Model.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Service.Common\bin\Debug\Model.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Service.Common\obj\Debug\Service.Common.csprojAssemblyReference.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Service.Common\obj\Debug\Service.Common.csproj.CoreCompileInputs.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Service.Common\obj\Debug\Service.Common.csproj.CopyComplete
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Service.Common\obj\Debug\Service.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\7.dan\TestProject\Service.Common\obj\Debug\Service.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\Service.Common\bin\Debug\Service.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\Service.Common\bin\Debug\Service.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\Service.Common\bin\Debug\Model.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\Service.Common\bin\Debug\Project.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\Service.Common\bin\Debug\Model.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\Service.Common\bin\Debug\Project.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\Service.Common\obj\Debug\Service.Common.csprojAssemblyReference.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\Service.Common\obj\Debug\Service.Common.csproj.CoreCompileInputs.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\Service.Common\obj\Debug\Service.Common.csproj.CopyComplete
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\Service.Common\obj\Debug\Service.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9. dan\TestProject\Service.Common\obj\Debug\Service.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\Service.Common\bin\Debug\Service.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\Service.Common\bin\Debug\Service.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\Service.Common\bin\Debug\Model.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\Service.Common\bin\Debug\Project.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\Service.Common\bin\Debug\Model.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\Service.Common\bin\Debug\Project.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\Service.Common\obj\Debug\Service.Common.csprojAssemblyReference.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\Service.Common\obj\Debug\Service.Common.csproj.CoreCompileInputs.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\Service.Common\obj\Debug\Service.Common.csproj.CopyComplete
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\Service.Common\obj\Debug\Service.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\9-10. dan\TestProject\Service.Common\obj\Debug\Service.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\19.dan\TestProject\Service.Common\bin\Debug\Service.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\19.dan\TestProject\Service.Common\bin\Debug\Service.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\19.dan\TestProject\Service.Common\bin\Debug\Model.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\19.dan\TestProject\Service.Common\bin\Debug\Project.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\19.dan\TestProject\Service.Common\bin\Debug\Model.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\19.dan\TestProject\Service.Common\bin\Debug\Project.Common.pdb
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\19.dan\TestProject\Service.Common\obj\Debug\Service.Common.csproj.AssemblyReference.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\19.dan\TestProject\Service.Common\obj\Debug\Service.Common.csproj.CoreCompileInputs.cache
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\19.dan\TestProject\Service.Common\obj\Debug\Service.Common.csproj.CopyComplete
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\19.dan\TestProject\Service.Common\obj\Debug\Service.Common.dll
+C:\Users\luka2\OneDrive\Radna površina\Praksa\Praksa\19.dan\TestProject\Service.Common\obj\Debug\Service.Common.pdb
